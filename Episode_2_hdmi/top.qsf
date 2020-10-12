@@ -7,6 +7,7 @@ set_global_assignment -name DEVICE                       5CSEBA6U23I7
 set_global_assignment -name TOP_LEVEL_ENTITY             "top"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY     build
 set_global_assignment -name NUM_PARALLEL_PROCESSORS      ALL
+set_global_assignment -name MUX_RESTRUCTURE              OFF
 
 
 #============================================================
@@ -14,6 +15,9 @@ set_global_assignment -name NUM_PARALLEL_PROCESSORS      ALL
 #============================================================
 
 set_global_assignment -name VHDL_FILE                    top.vhd
+set_global_assignment -name VHDL_FILE                    hdmi/hdmi.vhd
+set_global_assignment -name VHDL_FILE                    hdmi/hdmi_counters.vhd
+set_global_assignment -name VHDL_FILE                    hdmi/hdmi_output.vhd
 set_global_assignment -name SDC_FILE                     top.sdc
 
 
@@ -21,18 +25,41 @@ set_global_assignment -name SDC_FILE                     top.sdc
 # Pin assignments and I/O standards
 #============================================================
 
-# LED
-set_location_assignment PIN_W15                                   -to led_o[0]
-set_location_assignment PIN_AA24                                  -to led_o[1]
-set_location_assignment PIN_V16                                   -to led_o[2]
-set_location_assignment PIN_V15                                   -to led_o[3]
-set_instance_assignment -name IO_STANDARD          "3.3-V LVTTL"  -to led_o[*]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA           -to led_o[*]
-set_instance_assignment -name SLEW_RATE            1              -to led_o[*]
-# SW
-set_location_assignment PIN_Y24                                   -to sw_i[0]
-set_location_assignment PIN_W24                                   -to sw_i[1]
-set_location_assignment PIN_W21                                   -to sw_i[2]
-set_location_assignment PIN_W20                                   -to sw_i[3]
-set_instance_assignment -name IO_STANDARD          "3.3-V LVTTL"  -to sw_i[*]
+# CLOCK
+set_location_assignment PIN_V11  -to fpga_clk1_50_i
+
+# HDMI
+set_location_assignment PIN_AG5  -to hdmi_tx_clk_o
+set_location_assignment PIN_AD19 -to hdmi_tx_de_o
+set_location_assignment PIN_AD12 -to hdmi_tx_d_o[0]
+set_location_assignment PIN_AE12 -to hdmi_tx_d_o[1]
+set_location_assignment PIN_W8   -to hdmi_tx_d_o[2]
+set_location_assignment PIN_Y8   -to hdmi_tx_d_o[3]
+set_location_assignment PIN_AD11 -to hdmi_tx_d_o[4]
+set_location_assignment PIN_AD10 -to hdmi_tx_d_o[5]
+set_location_assignment PIN_AE11 -to hdmi_tx_d_o[6]
+set_location_assignment PIN_Y5   -to hdmi_tx_d_o[7]
+set_location_assignment PIN_AF10 -to hdmi_tx_d_o[8]
+set_location_assignment PIN_Y4   -to hdmi_tx_d_o[9]
+set_location_assignment PIN_AE9  -to hdmi_tx_d_o[10]
+set_location_assignment PIN_AB4  -to hdmi_tx_d_o[11]
+set_location_assignment PIN_AE7  -to hdmi_tx_d_o[12]
+set_location_assignment PIN_AF6  -to hdmi_tx_d_o[13]
+set_location_assignment PIN_AF8  -to hdmi_tx_d_o[14]
+set_location_assignment PIN_AF5  -to hdmi_tx_d_o[15]
+set_location_assignment PIN_AE4  -to hdmi_tx_d_o[16]
+set_location_assignment PIN_AH2  -to hdmi_tx_d_o[17]
+set_location_assignment PIN_AH4  -to hdmi_tx_d_o[18]
+set_location_assignment PIN_AH5  -to hdmi_tx_d_o[19]
+set_location_assignment PIN_AH6  -to hdmi_tx_d_o[20]
+set_location_assignment PIN_AG6  -to hdmi_tx_d_o[21]
+set_location_assignment PIN_AF9  -to hdmi_tx_d_o[22]
+set_location_assignment PIN_AE8  -to hdmi_tx_d_o[23]
+set_location_assignment PIN_T8   -to hdmi_tx_hs_o
+set_location_assignment PIN_V13  -to hdmi_tx_vs_o
+
+# All pins have the same I/O standard
+set_instance_assignment -name IO_STANDARD          "3.3-V LVTTL"  -to *
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA           -to *
+set_instance_assignment -name SLEW_RATE            1              -to *
 
