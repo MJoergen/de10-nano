@@ -1,0 +1,38 @@
+#============================================================
+# Design definition
+#============================================================
+
+set_global_assignment -name FAMILY                       "Cyclone V"
+set_global_assignment -name DEVICE                       5CSEBA6U23I7
+set_global_assignment -name TOP_LEVEL_ENTITY             "top"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY     build
+set_global_assignment -name NUM_PARALLEL_PROCESSORS      ALL
+
+
+#============================================================
+# Source files
+#============================================================
+
+set_global_assignment -name VHDL_FILE                    top.vhd
+set_global_assignment -name SDC_FILE                     top.sdc
+
+
+#============================================================
+# Pin assignments and I/O standards
+#============================================================
+
+# LED
+set_location_assignment PIN_W15                                   -to led_o[0]
+set_location_assignment PIN_AA24                                  -to led_o[1]
+set_location_assignment PIN_V16                                   -to led_o[2]
+set_location_assignment PIN_V15                                   -to led_o[3]
+set_instance_assignment -name IO_STANDARD          "3.3-V LVTTL"  -to led_o[*]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA           -to led_o[*]
+set_instance_assignment -name SLEW_RATE            1              -to led_o[*]
+# SW
+set_location_assignment PIN_Y24                                   -to sw_i[0]
+set_location_assignment PIN_W24                                   -to sw_i[1]
+set_location_assignment PIN_W21                                   -to sw_i[2]
+set_location_assignment PIN_W20                                   -to sw_i[3]
+set_instance_assignment -name IO_STANDARD          "3.3-V LVTTL"  -to sw_i[*]
+
