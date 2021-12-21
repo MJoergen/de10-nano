@@ -44,12 +44,12 @@ So, I follow the Quick Start Guide:
 * The webpage hosted by the DE10 nano board is where all the fun is.
 
 ### What does the board contain
-In the schematic page 2 there is a nice block diagram of the DE10 Nano board.
+In the [schematic](https://www.intel.com/content/dam/develop/external/us/en/documents/de10-nano-schematic-711128.pdf) page 2 there is a nice block diagram of the DE10 Nano board.
 It contains the following main I/O connectors:
 * Micro SD Card
 * Giga Ethernet
 * USB Host (e.g. keyboard, etc),
-* HDMI (via [ADV7513](https://www.analog.com/media/en/technical-documentation/data-sheets/ADV7513.pdf)
+* HDMI (via [ADV7513](https://www.analog.com/media/en/technical-documentation/data-sheets/ADV7513.pdf))
 * LEDs, switches, and buttons
 * UART to USB
 Additionally, the board contains
