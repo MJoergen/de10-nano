@@ -3,6 +3,9 @@ PROJECT = top
 all:
 	quartus_sh --flow compile $(PROJECT)
 
+program:
+	quartus_pgm -m jtag -o p\;build/top.sof@2
+
 clean:
 	rm -rf build/
 	rm -rf db/
