@@ -52,6 +52,7 @@ It contains the following main I/O connectors:
 * HDMI (via [ADV7513](https://www.analog.com/media/en/technical-documentation/data-sheets/ADV7513.pdf))
 * LEDs, switches, and buttons
 * UART to USB
+
 Additionally, the board contains
 * Cyclone V SoC FPGA including ARM HPS
 * 1 GB DDR3 RAM
