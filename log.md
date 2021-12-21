@@ -49,7 +49,7 @@ It contains the following main I/O connectors:
 * Micro SD Card
 * Giga Ethernet
 * USB Host (e.g. keyboard, etc),
-* HDMI (via [https://www.analog.com/media/en/technical-documentation/data-sheets/ADV7513.pdf](ADV7513))
+* HDMI (via [ADV7513](https://www.analog.com/media/en/technical-documentation/data-sheets/ADV7513.pdf)
 * LEDs, switches, and buttons
 * UART to USB
 Additionally, the board contains
