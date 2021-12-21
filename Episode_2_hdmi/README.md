@@ -131,6 +131,10 @@ make
 ```
 
 Once the build is finished, you can program the FPGA with the generated bitstream.
+This is mosty easily done with the command:
+```
+make program
+```
 
 Then you should be able to connect the DE10 Nano board to a HDMI monitor and see
 a beautiful (?) pattern on the screen!

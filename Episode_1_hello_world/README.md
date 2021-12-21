@@ -115,6 +115,10 @@ You will notice a few warnings remaining, like:
 
 
 Once the build is finished, you can program the FPGA with the generated bitstream.
+This is mosty easily done with the command:
+```
+make program
+```
 
 Then you should be able to control four of the LEDs using the four slide switches!
 
