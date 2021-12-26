@@ -1,0 +1,30 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sun Dec 26 07:41:16 2021
+[*]
+[dumpfile] "/home/mike/git/MJoergen/de10-nano/Episode_3_voronoi/voronoi.ghw"
+[dumpfile_mtime] "Sun Dec 26 07:38:27 2021"
+[dumpfile_size] 15331779
+[savefile] "/home/mike/git/MJoergen/de10-nano/Episode_3_voronoi/voronoi.gtkw"
+[timestart] 0
+[size] 1920 1052
+[pos] 1469 -218
+*-31.485926 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.tb.
+[treeopen] top.tb.i_voronoi.
+[sst_width] 403
+[signals_width] 140
+[sst_expanded] 1
+[sst_vpaned_height] 301
+@22
+#{top.tb.i_voronoi.pix_x[10:0]} top.tb.i_voronoi.pix_x[10] top.tb.i_voronoi.pix_x[9] top.tb.i_voronoi.pix_x[8] top.tb.i_voronoi.pix_x[7] top.tb.i_voronoi.pix_x[6] top.tb.i_voronoi.pix_x[5] top.tb.i_voronoi.pix_x[4] top.tb.i_voronoi.pix_x[3] top.tb.i_voronoi.pix_x[2] top.tb.i_voronoi.pix_x[1] top.tb.i_voronoi.pix_x[0]
+#{top.tb.i_voronoi.pix_y[10:0]} top.tb.i_voronoi.pix_y[10] top.tb.i_voronoi.pix_y[9] top.tb.i_voronoi.pix_y[8] top.tb.i_voronoi.pix_y[7] top.tb.i_voronoi.pix_y[6] top.tb.i_voronoi.pix_y[5] top.tb.i_voronoi.pix_y[4] top.tb.i_voronoi.pix_y[3] top.tb.i_voronoi.pix_y[2] top.tb.i_voronoi.pix_y[1] top.tb.i_voronoi.pix_y[0]
+@28
+top.tb.i_voronoi.de_o
+top.tb.i_voronoi.hs_o
+top.tb.i_voronoi.vs_o
+@23
+#{top.tb.i_voronoi.col_o[23:0]} top.tb.i_voronoi.col_o[23] top.tb.i_voronoi.col_o[22] top.tb.i_voronoi.col_o[21] top.tb.i_voronoi.col_o[20] top.tb.i_voronoi.col_o[19] top.tb.i_voronoi.col_o[18] top.tb.i_voronoi.col_o[17] top.tb.i_voronoi.col_o[16] top.tb.i_voronoi.col_o[15] top.tb.i_voronoi.col_o[14] top.tb.i_voronoi.col_o[13] top.tb.i_voronoi.col_o[12] top.tb.i_voronoi.col_o[11] top.tb.i_voronoi.col_o[10] top.tb.i_voronoi.col_o[9] top.tb.i_voronoi.col_o[8] top.tb.i_voronoi.col_o[7] top.tb.i_voronoi.col_o[6] top.tb.i_voronoi.col_o[5] top.tb.i_voronoi.col_o[4] top.tb.i_voronoi.col_o[3] top.tb.i_voronoi.col_o[2] top.tb.i_voronoi.col_o[1] top.tb.i_voronoi.col_o[0]
+[pattern_trace] 1
+[pattern_trace] 0
